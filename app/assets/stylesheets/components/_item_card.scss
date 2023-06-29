@@ -1,0 +1,74 @@
+.card-item {
+  border: 1px solid #e7e7e7; // Bordure solide d'épaisseur 1px de couleur grise
+  border-radius: 8px; // Coins arrondis de 8px
+  padding: 16px; // Marge intérieure de 16px pour créer un espace entre le contenu et la bordure
+  box-shadow: 0 2px 4px rgba(28, 27, 27, 0.1);
+  width: 95%;
+  height: 550px;
+  margin-bottom: 15px;
+
+  .card-img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+
+    .fa-pen-to-square {
+      position: absolute;
+      top: 2%;
+      left: 83%;
+      color: #a9aed1;
+    }
+
+    .fa-trash-can {
+      position: absolute;
+      top: 2%;
+      left: 91%;
+      color: #e29d9d;
+    }
+  }
+
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  .card-name {
+    font-weight: bold;
+    font-family: $title-font;
+    color: $blue;
+    font-size: 18px;
+  }
+
+  .card-description {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+  }
+  .card-dimensions {
+    color: gray;
+    font-size: 14px;
+  }
+
+  .card-price {
+    padding-left: 6px;
+    border-radius: 10px;
+  }
+
+  .price {
+    width: 85px;
+    border-radius: 20px;
+  }
+}

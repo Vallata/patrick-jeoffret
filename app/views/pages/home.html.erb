@@ -1,2 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+
+  <div class="lignes">
+    <div class="l1"></div>
+    <div class="l2"></div>
+  </div>
+
+  <%# <h1 class="text-center title">Le design dont vous avez toujours rêvé pour vos meubles.</h1> %>
+
+  <%# js %>
+  <div class="container-first text-center">
+      <h1 class="title"><span>Le </span><span>design </span><span>dont </span><span>vous </span><span>avez </span><span>toujours </span><span>rêvé. </span></h1>
+  </div>
+  <%# js %>
+
+  <h3 class="text-primary">Les 3 dernières créations</h3>
+
+  <% if @items.any? %>
+    <div class="items-grid my-5">
+        <%= render "shared/item_card" %>
+    </div>
+  <% else %>
+    <em>Vous n'avez pas encore ajouté de meuble.</em>
+  <% end %>
+</div>

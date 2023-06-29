@@ -1,0 +1,39 @@
+<% @items.each do |item| %>
+
+  <div class="card-item">
+
+    <div class="card-img">
+      <%= link_to edit_item_path(item) do %>
+        <i class="fa-regular fa-pen-to-square fs-4"></i>
+      <% end %>
+      <%= link_to item_path(item), data: { turbo_method: :delete, turbo_confirm: "Voulez-vous vraiment supprimer ce meuble?" } do %>
+        <i class="fa-regular fa-trash-can fs-4"></i>
+      <% end %>
+      <% if item.photo.attached? %>
+        <%= image_tag item.photo %>
+      <% else %>
+        <p>Pas de photo</p>
+      <% end %>
+    </div>
+
+    <div class="card-infos">
+
+      <div class="card-details">
+        <div class="card-name">
+          <p><%= item.name %></p>
+        </div>
+        <div class="card-price">
+          <%= link_to "#", class:"btn btn-warning text-white price" do %>
+            <%= item.price %> €
+          <% end  %>
+        </div>
+      </div>
+
+      <p class="card-description">« <%= item.description %> »</p>
+      <p class="card-dimensions">Dimensions : L <%= item.length %>cm x l <%= item.width %>cm x H <%= item.height %>cm P <%= item.weight %>kg</p>
+
+    </div>
+
+  </div>
+
+<% end %>

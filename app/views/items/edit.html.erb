@@ -1,0 +1,25 @@
+<div class="container my-5">
+
+  <%= simple_form_for @item do |f| %>
+    <%= f.input :name, label: 'Nom de la pièce'%>
+    <%= f.input :description, label: 'Description' %>
+    <div class="row">
+      <div class="col">
+        <%= f.input :length, label: 'Longueur (cm)', class:"form-control" %>
+      </div>
+      <div class="col">
+        <%= f.input :width, label: 'Largeur (cm)', class:"form-control" %>
+      </div>
+      <div class="col">
+        <%= f.input :height, label: 'Hauteur (cm)', class:"form-control" %>
+      </div>
+      <div class="col">
+        <%= f.input :weight, label: 'Poids (kg)', class:"form-control" %>
+      </div>
+    </div>
+    <%= f.input :price, label: 'Prix de vente (euros)' %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, "+ Actualiser un meuble", class:"btn btn-warning" %>
+  <% end %>
+
+</div>
