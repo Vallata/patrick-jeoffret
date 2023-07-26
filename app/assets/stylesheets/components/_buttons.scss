@@ -1,4 +1,4 @@
-.btn-3-lasts {
+.btn-white {
   display: block;
   width: 212px;
   margin: auto;
@@ -6,4 +6,31 @@
   border: 1px solid white;
   color: white;
   padding: 20px;
+}
+
+.btn-white:hover {
+  color: #586861;
+  background-color: #ffffff85;
+  transition: 0.3s;
+  border: none;
+}
+
+
+.btn-arrow {
+  display: block;
+  width: 212px;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  opacity: 0.4;
+}
+
+.btn-contact {
+  display: inline;
+  padding: 10px;
+  color: #586861;
+  font-weight: bold;
+  opacity: 0.9;
 }

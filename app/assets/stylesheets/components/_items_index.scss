@@ -5,3 +5,17 @@
   grid-auto-flow: row;
   justify-content: center;
 }
+
+@media (max-width: 1024px) {
+  .items-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query pour les appareils mobiles en mode portrait */
+@media (max-width: 768px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

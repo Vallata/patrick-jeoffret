@@ -17,25 +17,26 @@
       <%= hidden_field_tag :subject, "Vous avez été contacté sur Patrick J. design." %>
 
       <div class="form-group my-1 text-white">
-        <%= label_tag :name, "Votre nom" %>
-        <%= text_field_tag :name, nil, class: "form-control", required: true %>
+        <%= label_tag :name, "Nom" %>
+        <%= text_field_tag :name, nil, class: "form-control white-field rounded-pill", required: true %>
       </div>
 
       <div class="form-group my-1 text-white">
-        <%= label_tag :email, "Votre email" %>
-        <%= email_field_tag :email, nil, class: "form-control", required: true %>
+        <%= label_tag :email, "Email" %>
+        <%= email_field_tag :email, nil, class: "form-control white-field rounded-pill", required: true  %>
       </div>
 
       <div class="form-group my-1 text-white">
         <%= label_tag :message, "Message" %>
-        <%= text_area_tag :message, nil, class: "form-control", required: true %>
+        <%= text_area_tag :message, nil, class: "form-control white-field rounded", required: true, rows: 5%>
       </div>
 
-      <div class="form-group my-1 text-white">
+      <div class="form-group my-1 text-white my-3">
         <div class="h-captcha" data-captcha="true"></div>
       </div>
 
-      <%= submit_tag "Envoyer", class: "btn btn-warning text-white my-3" %>
+      <%= submit_tag "Envoyer", class: "btn-contact" %>
+
     <% end %>
   </div>
 </div>
