@@ -1,9 +1,16 @@
-<div class="container">
-
-  <div class="container-first text-center">
-    <h1 class="title"><span>Faites </span><span>plaisir </span><span>à </span><span>votre </span><span>intérieur</span><span>. </span></h1>
+<div class="background-image background-image-shop">
+  <div class="lignes py-5">
+    <div class="l1"></div>
+    <div class="l2"></div>
   </div>
 
+  <div class="container-first text-center">
+    <h1 class="title-white"><span>La </span><span>Boutique </span><span>. </span> </span></h1>
+    <h1 class="title-white"><span>Ici, </span><span>faites </span><span>plaisir </span><span>à </span><span>votre </span><span>intérieur</span><span>. </span></h1>
+  </div>
+</div>
+
+<div class="container-shop">
   <%= link_to "+ Ajouter un meuble", new_item_path, class:"btn btn-warning text-white"%>
 
   <% if @items.any? %>

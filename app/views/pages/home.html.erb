@@ -1,4 +1,4 @@
-<div class="container">
+<div class="background-image background-image-home">
 
   <div class="lignes py-5">
     <div class="l1"></div>
@@ -7,13 +7,18 @@
 
   <%# <h1 class="text-center title">Le design dont vous avez toujours rêvé pour vos meubles.</h1> %>
 
-  <%# js %>
+    <%# js %>
   <div class="container-first text-center">
-      <h1 class="title"><span>Le </span><span>design </span><span>dont </span><span>vous </span><span>avez </span><span>toujours </span><span>rêvé. </span></h1>
+      <h1 class="title-white"><span>Le </span><span>design </span><span>dont </span><span>vous </span><span>avez </span><span>toujours </span><span>rêvé. </span></h1>
   </div>
+
+  <a href="#3-lasts" class="btn-3-lasts">3 dernières créations</a>
   <%# js %>
 
-  <h3 class="text-primary">Les 3 dernières créations</h3>
+</div>
+
+<div class="container-home">
+  <h3 id="3-lasts" class="text-primary text-center fw-bold">Les 3 dernières créations</h3>
 
   <% if @items.any? %>
     <div class="items-grid my-5">
