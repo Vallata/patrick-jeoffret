@@ -1,3 +1,5 @@
+<div class="navbar-under-cover">
+</div>
 <div class="background-image background-image-shop">
   <div class="lignes py-5">
     <div class="l1"></div>
@@ -14,8 +16,10 @@
 </div>
 
 <div class="container-shop">
-  <%= link_to "+ Ajouter un meuble", new_item_path, class:"btn btn-warning text-white"%>
-
+  <% if user_signed_in? %>
+    <%= link_to "+ Ajouter un meuble", new_item_path, class:"btn btn-warning text-white"%>
+  <% end %>
+  
   <% if @items.any? %>
     <div class="items-grid my-5">
       <%= render "shared/item_card" %>

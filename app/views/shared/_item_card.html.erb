@@ -3,11 +3,13 @@
   <div id="3-lasts" class="card-item">
 
     <div class="card-img">
-      <%= link_to edit_item_path(item) do %>
-        <i class="fa-regular fa-pen-to-square fs-4"></i>
-      <% end %>
-      <%= link_to item_path(item), data: { turbo_method: :delete, turbo_confirm: "Voulez-vous vraiment supprimer ce meuble?" } do %>
-        <i class="fa-regular fa-trash-can fs-4"></i>
+      <% if user_signed_in? %>
+        <%= link_to edit_item_path(item) do %>
+          <i class="fa-regular fa-pen-to-square fs-4"></i>
+        <% end %>
+        <%= link_to item_path(item), data: { turbo_method: :delete, turbo_confirm: "Voulez-vous vraiment supprimer ce meuble?" } do %>
+          <i class="fa-regular fa-trash-can fs-4"></i>
+        <% end %>
       <% end %>
       <% if item.photo.attached? %>
         <%= image_tag item.photo %>

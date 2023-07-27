@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home ]
+  skip_before_action :authenticate_user!, only: [ :home, :about, :contact, :thanks ]
 
   def home
     @items = Item.last(3)
@@ -9,9 +9,6 @@ class PagesController < ApplicationController
   end
 
   def contact
-  end
-
-  def shop
   end
 
   def thanks
