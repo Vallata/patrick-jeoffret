@@ -6,7 +6,6 @@
 .container-about {
   background-color: #5b6860;
   color: whitesmoke;
-  padding: 30px 180px;
 }
 
 @media (max-width: 768px) {
@@ -31,20 +30,20 @@
 
 @media (max-width: 768px) {
   .container-about {
-    padding: 0 20px; /* Ajuster la marge pour une meilleure adaptation */
+    padding: 20px 20px; /* Ajuster la marge pour une meilleure adaptation */
   }
 }
 
 /* Media query pour les écrans entre 769px et 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   .container-about {
-    padding: 0 80px; /* Ajuster la marge pour une meilleure adaptation */
+    padding: 20px 80px; /* Ajuster la marge pour une meilleure adaptation */
   }
 }
 
 /* Media query pour les écrans supérieurs à 1024px (ordinateurs de bureau) */
 @media (min-width: 1025px) {
   .container-about {
-    padding: 0 200px; /* Ajuster la marge pour une meilleure adaptation */
+    padding: 20px 200px; /* Ajuster la marge pour une meilleure adaptation */
   }
 }
