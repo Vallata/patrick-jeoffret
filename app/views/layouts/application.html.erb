@@ -17,9 +17,8 @@
   <%= render "shared/flashes" %>
 
     <%= yield %>
-
-
-  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js' %>
-  <%= javascript_include_tag 'home' %>
+    <%= javascript_include_tag "https://code.jquery.com/jquery-3.6.0.min.js" %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js' %>
+    <%= javascript_include_tag 'home' %>
   </body>
 </html>
