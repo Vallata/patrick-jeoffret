@@ -1,0 +1,12 @@
+<div class="navbar-under-cover">
+</div>
+<div class="background-image background-image-item" style="background-image: url('<%= url_for(@item.photo) %>')">
+  <div class="card-item-show">
+    <%= render "shared/item_card", item: @item %>
+  </div>
+
+  <div class="card-item-contact">
+    <%= render "shared/contact", item: @item %>
+  </div>
+
+</div>

@@ -67,7 +67,7 @@
     padding-left: 6px;
     border-radius: 10px;
     position: absolute;
-    bottom: 32px;
+    bottom: 17px;
     right: 0px;
   }
 
@@ -75,4 +75,13 @@
     width: 85px;
     border-radius: 20px;
   }
+}
+
+.card-item-show {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.card-item-contact {
+  width: 50%;
 }

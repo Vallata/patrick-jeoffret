@@ -16,13 +16,15 @@
 </div>
 
 <div class="container-shop">
-  <% if user_signed_in? %>
+  <% if user_signed_in? && current_user.email == "patrick.j@gmail.com" %>
     <%= link_to "+ Ajouter un meuble", new_item_path, class:"btn btn-warning text-white"%>
   <% end %>
-  
+
   <% if @items.any? %>
     <div class="items-grid my-5">
-      <%= render "shared/item_card" %>
+       <% @items.each do |item| %>
+        <%= render "shared/item_card", item: item %>
+      <% end %>
     </div>
   <% else %>
     <div class="mt-5">

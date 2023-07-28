@@ -1,0 +1,29 @@
+<%= form_tag "https://api.web3forms.com/submit", method: :post, class: "custom-form" do %>
+  <%= hidden_field_tag :access_key, "6e5a1b49-109d-472e-8c8b-a29462fcc4aa" %>
+  <%# à modifier le jour de la mise en dev %>
+  <%= hidden_field_tag :redirect, "http://localhost:3000/thanks" %>
+  <%= hidden_field_tag :from_name, "Patrick J. Design" %>
+  <%= hidden_field_tag :subject, "#{item.name}" %>
+
+  <div class="form-group my-1 text-white">
+    <%= label_tag :name, "Nom" %>
+    <%= text_field_tag :name, nil, class: "form-control white-field rounded-pill", required: true %>
+  </div>
+
+  <div class="form-group my-1 text-white">
+    <%= label_tag :email, "Email" %>
+    <%= email_field_tag :email, nil, class: "form-control white-field rounded-pill", required: true  %>
+  </div>
+
+  <div class="form-group my-1 text-white">
+    <%= label_tag :message, "Message" %>
+    <%= text_area_tag :message, nil, class: "form-control white-field rounded", required: true, rows: 2 %>
+  </div>
+
+  <div class="form-group my-1 text-white my-3">
+    <div class="h-captcha" data-captcha="true"></div>
+  </div>
+
+  <%= submit_tag "Envoyer", class: "btn-contact" %>
+
+<% end %>
