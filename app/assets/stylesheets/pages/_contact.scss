@@ -1,3 +1,23 @@
 .white-field {
   background-color: $light-gray;
 }
+
+@media (max-width: 768px) {
+  .container-contact {
+    margin: 0 20px; /* Ajuster la marge pour une meilleure adaptation */
+  }
+}
+
+/* Media query pour les écrans entre 769px et 1024px (tablettes) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-contact {
+    margin: 0 80px; /* Ajuster la marge pour une meilleure adaptation */
+  }
+}
+
+/* Media query pour les écrans supérieurs à 1024px (ordinateurs de bureau) */
+@media (min-width: 1025px) {
+  .container-contact {
+    margin: 0 200px; /* Ajuster la marge pour une meilleure adaptation */
+  }
+}

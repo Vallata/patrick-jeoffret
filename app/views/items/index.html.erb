@@ -15,7 +15,7 @@
 
 </div>
 
-<div class="container-shop">
+<div class="container-grid">
   <% if user_signed_in? && current_user.email == "patrick.j@gmail.com" %>
     <%= link_to "+ Ajouter un meuble", new_item_path, class:"btn btn-warning text-white"%>
   <% end %>
