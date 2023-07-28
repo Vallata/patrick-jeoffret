@@ -3,7 +3,7 @@
   <%# à modifier le jour de la mise en dev %>
   <%= hidden_field_tag :redirect, "http://localhost:3000/thanks" %>
   <%= hidden_field_tag :from_name, "Patrick J. Design" %>
-  <%= hidden_field_tag :subject, "#{item.name}" %>
+  <%= hidden_field_tag :subject, "#{item.name if item != nil}" %>
 
   <div class="form-group my-1 text-white">
     <%= label_tag :name, "Nom" %>
