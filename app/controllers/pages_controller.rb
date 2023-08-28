@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def thanks
   end
+
+  def test
+  end
 end

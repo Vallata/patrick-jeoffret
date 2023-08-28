@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/thanks', to: 'pages#thanks'
   resources :items, only: %i[new show create index edit update destroy]
+  # get '/test', to: 'pages#test'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

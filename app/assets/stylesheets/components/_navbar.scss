@@ -7,7 +7,7 @@
   margin-bottom: 100px;
   transition: top 0.3s;
   opacity: 1;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -30,6 +30,10 @@
   background-color: $light-gray;
 }
 
-.navbar-lewagon-none-scroll {
+.navbar-lewagon-opacity-scroll {
   opacity:  0;
+}
+
+.navbar-lewagon-none-scroll {
+  display: none;
 }
