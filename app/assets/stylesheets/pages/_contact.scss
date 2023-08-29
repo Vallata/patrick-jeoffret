@@ -2,6 +2,10 @@
   background-color: $light-gray;
 }
 
+.contact-text {
+  position: relative;
+  bottom: 46px;
+}
 @media (max-width: 768px) {
   .container-contact {
     margin: 0 20px; /* Ajuster la marge pour une meilleure adaptation */

@@ -15,6 +15,15 @@
   top: 20px;
 }
 
+.reveal-loaded .reveal {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.reveal-loaded {
+  transition: 1s;
+}
+
 @media (max-width: 768px) {
   .l1,
   .l2 {

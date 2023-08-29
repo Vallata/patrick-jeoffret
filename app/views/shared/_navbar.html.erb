@@ -1,7 +1,7 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon ">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-lewagon-position-fixed">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo.jpeg", style:"width:100px;margin-left:10px" %>
+      <%= image_tag "logo.jpeg", style:"width:75px;margin-left:10px" %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,11 +16,11 @@
         <li class="nav-item">
           <%= link_to "Boutique", items_path, class: "nav-link fw-bold" %>
         </li>
+        <li class="nav-item active">
+          <%= link_to "Sur Mesure", contact_path, class: "nav-link fw-bold" %>
+        </li>
         <li class="nav-item">
           <%= link_to "A propos", about_path, class: "nav-link fw-bold" %>
-        </li>
-        <li class="nav-item active">
-          <%= link_to "Contact", contact_path, class: "nav-link fw-bold" %>
         </li>
         <% if user_signed_in? && current_user.email == "patrick.j@gmail.com" %>
           <li class="nav-item dropdown">

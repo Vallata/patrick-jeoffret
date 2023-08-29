@@ -3,7 +3,7 @@
   margin-bottom: 40px;
   font-family: "Raleway", sans-serif;
   color: #586861;
-  font-size: 65px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -11,9 +11,18 @@
   padding-top: 35px;
   margin-bottom: 100px;
   font-family: "Raleway", sans-serif;
-  color: #f7f3f3;
+  color: $light-gray;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 60px;
+}
+
+.little-title-white {
+  color: $light-gray;
+}
+
+.title-devis {
+  position:relative;
+  left: 197px;
 }
 
 @media (max-width: 500px) {

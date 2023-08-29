@@ -5,11 +5,18 @@
     <div class="l1"></div>
     <div class="l2"></div>
   </div>
-  <div class="container-first text-center">
-    <h1 class="title-white"><span>Contactez</span><span>-</span><span>moi </span></h1>
+  <div class="container-first">
+    <h1 class="title-white title-devis"><span>Devis </span><span>sur </span><span>mesure.</span></h1>
   </div>
   <div class="container-contact">
-    <%= render "shared/contact", item: @item %>
+    <div class="contact-text text-white">
+      <p>Chaque espace est unique, tout comme vos goûts et vos besoins.</p>
+      <p>Transformez vos rêves d'intérieur en réalité avec du mobilier sur mesure.</p>
+      <p>Contactez-moi pour un devis.</p>
+    </div>
+    <div class="contact-form">
+      <%= render "shared/contact", item: @item %>
+    </div>
   </div>
 </div>
 

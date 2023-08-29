@@ -8,21 +8,27 @@
 
 .background-image-about {
   background-image: linear-gradient(to bottom, #00000052 0%, #00000052 75%), url(https://images.unsplash.com/photo-1509460364839-ef5b594e0ee8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80);
+  background-attachment: fixed;
+
   height: 530px;
 }
 .background-image-home {
   background-image: linear-gradient(to bottom, #00000052 0%, #00000052 75%), url(https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80);
+  background-attachment: fixed;
   background-position-y: 72%;
   height: 658px;
 }
 .background-image-contact {
   background-image: linear-gradient(to bottom, #00000052 0%, #00000052 75%), url(https://images.unsplash.com/photo-1516196252840-f9947d2bcb7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
-  height: 740px;
+  background-attachment: fixed;
+  height: 900px;
 }
 
 .background-image-shop {
   background-image: linear-gradient(to bottom, #00000052 0%, #00000052 75%), url(https://images.unsplash.com/photo-1501501753674-3cc5ea1bc1ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80
   );
+  background-attachment: fixed;
+
   background-position-y: 100%;
   height: 658px;
 }
