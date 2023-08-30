@@ -3,25 +3,43 @@
 }
 
 .contact-text {
-  position: relative;
-  bottom: 46px;
+  margin-bottom: 55px;
 }
-@media (max-width: 768px) {
-  .container-contact {
-    margin: 0 20px; /* Ajuster la marge pour une meilleure adaptation */
+
+.contact-form {
+  width: 576px;
+}
+
+/* Media query pour les écrans jusqu'à 767px (petits écrans) */
+@media (max-width: 767px) {
+  .background-image-contact {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title-devis {
+    font-size: 34px;
+  }
+
+  .contact-text {
+    bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
 
-/* Media query pour les écrans entre 769px et 1024px (tablettes) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container-contact {
+/* Media query pour les écrans jusqu'à 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .container-contact, .title-devis {
     margin: 0 80px; /* Ajuster la marge pour une meilleure adaptation */
   }
 }
 
 /* Media query pour les écrans supérieurs à 1024px (ordinateurs de bureau) */
 @media (min-width: 1025px) {
-  .container-contact {
+  .container-contact, .title-devis {
     margin: 0 200px; /* Ajuster la marge pour une meilleure adaptation */
   }
 }

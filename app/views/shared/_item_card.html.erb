@@ -10,7 +10,7 @@
     <% end %>
   </div>
 
-  <div class="back">
+  <div class="back d-flex flex-column">
     <div class="card-img">
       <% if user_signed_in? && current_user.email == "patrick.j@gmail.com" %>
         <%= link_to edit_item_path(item) do %>
